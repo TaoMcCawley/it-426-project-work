@@ -26,12 +26,15 @@ public class TestAdventurers
         GearedAdventurer knight = new GearedAdventurer("Robyn",
                 AdventurerType.KNIGHT, new TimidBehavior(), new TrowelTool());
 
+        //act timid with a trowel!
         knight.takeAction();
         knight.useTool();
 
         knight = new GearedAdventurer("Brianne", AdventurerType.KNIGHT,
                 new AggressiveBehavior(), new ArchaeologicalTool());
 
-
+        //act aggressive with an archaeological tool!
+        knight.takeAction();
+        knight.useTool();
     }
 }
